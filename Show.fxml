@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.showController">
+   <children>
+      <ImageView fitHeight="406.0" fitWidth="400.0" layoutY="-3.0" pickOnBounds="true">
+         <image>
+            <Image url="file:/C:/Users/emmam/Downloads/theatre.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="143.0" layoutY="44.0" text="Show Booking">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sName" layoutX="143.0" layoutY="92.0" />
+      <Slider fx:id="runningTime" layoutX="143.0" layoutY="139.0" max="400.0" prefHeight="33.0" prefWidth="201.0" showTickLabels="true" />
+      <DatePicker fx:id="start" layoutX="143.0" layoutY="200.0" promptText="Start date" />
+      <DatePicker fx:id="end" layoutX="143.0" layoutY="246.0" promptText="End date" />
+      <Label layoutX="74.0" layoutY="204.0" text="Dates:" />
+      <Label layoutX="50.0" layoutY="147.0" text="Running Time:" />
+      <Label layoutX="48.0" layoutY="96.0" text="Name of show:" />
+      <Button layoutX="174.0" layoutY="299.0" mnemonicParsing="false" onAction="#addShow" text="Submit" />
+      <Button cancelButton="true" layoutX="177.0" layoutY="338.0" mnemonicParsing="false" onAction="#openMain" text="Home" />
+   </children>
+</AnchorPane>
